@@ -15,9 +15,10 @@ body {
 
 
 
-.boxes, main {
+main {
     flex: 1;
     min-height: 100%;
+    padding-top: 20px;
     padding-right: 20px;
     width: 100%;
     box-sizing: border-box;
@@ -29,14 +30,13 @@ h1, p {
 }
 
 header, footer {
-    background: silver;
     padding: 20px;
     display: flex;
     flex-direction: column;
 }
 
 header {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .box {
@@ -65,41 +65,50 @@ header {
         width: calc(50% - 20px);
     }
     .box:nth-child(2n-1) {
-        background: maroon;
         clear: left;
     }
 }
 
 /* from medium and up */
 @media screen and (min-width: 769px) {
-
+    main {
+        padding-left: 5%;
+        padding-right: calc(5% + 20px);
+    }
 }
 
 /* medium-only */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .box {
-        width: calc(33% - 20px);
+        width: calc(33.3333% - 20px);
+    }
+    .boxes-4 .box {
+        width: calc(50% - 20px);
     }
     .box:nth-child(3n-2) {
         clear: left;
-        background: maroon;
     }
+    .boxes-4 .box:nth-child(3n-2) {
+        clear: none;
+    }
+    .boxes-4 .box:nth-child(2n-1) {
+        clear: left;
+    }
+
 }
 
 /* from large and up */
 @media screen and (min-width: 1025px) {
-
+    .box {
+        width: calc(25% - 20px);
+    }
 }
 
 
 /* large only */
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
-    .box {
-        width: calc(25% - 20px);
-    }
     .box:nth-child(4n-3) {
         clear: left;
-        background: maroon;
     }
 }
 
@@ -108,8 +117,13 @@ header {
     .box {
         width: calc(20% - 20px);
     }
+    .boxes-4 .box {
+        width: calc(25% - 20px);
+    }
     .box:nth-child(5n+1) {
         clear: left;
-        background: maroon;
+    }
+    .boxes-4 .box:nth-child(5n+1) {
+        clear: none;
     }
 }

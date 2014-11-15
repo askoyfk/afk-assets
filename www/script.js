@@ -20,7 +20,7 @@
         parent.appendChild(div);
     };
 
-    document.body.appendChild(parent);
+    document.getElementsByTagName('main')[0].appendChild(parent);
 
 
 })();

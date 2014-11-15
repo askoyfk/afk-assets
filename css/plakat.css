@@ -1,0 +1,49 @@
+#plakat {
+    padding: 20px 40px;
+    box-sizing: border-box;
+    background: orange;
+}
+
+/* tiny */
+@media screen and (max-width: 480px) {
+
+}
+
+/* from small and up */
+@media screen and (min-width: 481px) {
+
+}
+
+/* small-only */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* from medium and up */
+@media screen and (min-width: 769px) {
+    #plakat {
+        padding-left: calc(5% + 40px);
+        padding-right: calc(5% + 60px);
+    }
+}
+
+/* medium-only */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* from large and up */
+@media screen and (min-width: 1025px) {
+
+}
+
+
+/* large only */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* huge */
+@media screen and (min-width: 1281px) {
+
+}
