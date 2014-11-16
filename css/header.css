@@ -1,0 +1,6 @@
+header {
+    background: var(--main-color);
+    padding: 20px 40px;
+/*     display: flex;
+flex-direction: column; */
+}

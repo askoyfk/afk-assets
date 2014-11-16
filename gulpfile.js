@@ -5,16 +5,18 @@ var deploy = require('gulp-gh-pages');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer-core');
 var cssimport = require('postcss-import');
-var customProperties = require("postcss-custom-properties");
+var customProperties = require('postcss-custom-properties');
 var hwb = require('postcss-color-hwb');
 var color = require('color');
+var customMedia = require('postcss-custom-media');
 
 gulp.task('styles', function () {
     var processors = [
-    cssimport(),
-    hwb(),
-    customProperties(),
-    autoprefixer({ browsers: ['last 2 versions'] })
+        cssimport(),
+        hwb(),
+        customMedia(),
+        customProperties(),
+        autoprefixer({ browsers: ['last 2 versions'] })
     ];
 
     return gulp.src('css/main.css')

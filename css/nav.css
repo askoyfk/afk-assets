@@ -1,0 +1,27 @@
+nav {
+    background: var(--main-color--darkened);
+    padding-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    direction: row;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 0;
+}
+
+nav a {
+    padding: 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+
+}

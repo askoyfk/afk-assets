@@ -1,5 +1,9 @@
 @import 'node_modules//normalize.css/normalize.css';
-@import 'css/variables.css';
+@import 'css/config.css';
 @import 'css/base.css';
+@import 'css/header.css';
+@import 'css/footer.css';
+@import 'css/nav.css';
 @import 'css/plakat.css';
+@import 'css/sponsorer.css';
 @import 'css/boxes.css';

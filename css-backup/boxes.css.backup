@@ -1,0 +1,136 @@
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: HelveticaNeue;
+}
+
+
+
+main {
+    flex: 1;
+    min-height: 100%;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    -ms-flex-preferred-size: auto;
+}
+
+h1, p {
+    margin: 0;
+}
+
+header, footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    /* margin-bottom: 20px; */
+}
+
+.box {
+    background: orange;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/*
+
+tiny:
+*/
+
+/* tiny */
+@media screen and (--tiny-viewport) {
+    .box {
+        background: pink;
+    }
+}
+
+/* from small and up */
+@media screen and (--tiny-viewport-plus-one-px) {
+    .box {
+        float:left;
+    }
+}
+
+/* small-only */
+@media screen and (--tiny-viewport-plus-one-px) and (--small-viewport) {
+    .box {
+        width: calc(50% - 20px);
+    }
+    .box:nth-child(2n-1) {
+        clear: left;
+    }
+}
+
+/* from medium and up */
+@media screen and (min-width: 769px) {
+    main {
+        padding-left: 5%;
+        padding-right: calc(5% + 20px);
+    }
+}
+
+/* medium-only */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .box {
+        width: calc(33.3333% - 20px);
+    }
+    .boxes-4 .box {
+        width: calc(50% - 20px);
+    }
+    .box:nth-child(3n-2) {
+        clear: left;
+    }
+    .boxes-4 .box:nth-child(3n-2) {
+        clear: none;
+    }
+    .boxes-4 .box:nth-child(2n-1) {
+        clear: left;
+    }
+
+}
+
+/* from large and up  */
+@media screen and (min-width: 1024px) {
+    .box {
+        width: calc(25% - 20px);
+    }
+}
+
+
+/* large only */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .box:nth-child(4n-3) {
+        clear: left;
+    }
+}
+
+/* huge */
+@media screen and (min-width: 1281px) {
+    .box {
+        width: calc(20% - 20px);
+    }
+    .boxes-4 .box {
+        width: calc(25% - 20px);
+    }
+    .box:nth-child(5n+1) {
+        clear: left;
+    }
+    .boxes-4 .box:nth-child(5n+1) {
+        clear: none;
+    }
+}

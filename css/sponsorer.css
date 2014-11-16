@@ -1,8 +1,7 @@
-#plakat {
-    height: 200px;
+#sponsorer {
     padding: 20px 40px;
     box-sizing: border-box;
-    background: orange;
+    background: silver;
 }
 
 @media screen and (--tiny-max) {
