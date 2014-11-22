@@ -14,23 +14,35 @@
     <!-- <script src="classlist/classList.min.js"></script> -->
 
 </head>
-<body>
+<body data-menu-visible="true">
 
     <header>
-        <h1>AFK</h1>
-        <p>Wireframe</p>
+
+
+        <button>Meny</button>
+
+        <script>
+            [].pop.call(document.getElementsByTagName('button')).addEventListener('click', function() {
+                document.body.classList.toggle('menu-visible');
+            });
+        </script>
+
+        <h1>Askøy Fotballklubb</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Klubben</a></li>
+                <li><a href="#">Lag</a></li>
+                <li><a href="#">Baner</a></li>
+                <li><a href="#">Kalender</a></li>
+                <li><a href="#">Arrangement</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Klubben</a></li>
-            <li><a href="#">Lag</a></li>
-            <li><a href="#">Baner</a></li>
-            <li><a href="#">Kalender</a></li>
-            <li><a href="#">Arrangement</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-    </nav>
+
 
     <section id="plakat">
         <h1>Nobi julecup</h1>
