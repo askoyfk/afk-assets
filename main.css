@@ -458,9 +458,9 @@ main {
 h1, p {
     margin: 0;
 }
-header, #plakat, #sponsorer, main, footer, header nav {
-    transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
+header, #plakat, #sponsorer, main, footer, nav {
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
 }
 header {
     background: rgb(222, 26, 26);
@@ -471,34 +471,37 @@ flex-direction: column; */
 header h1 {
     float: left;
 }
-header nav {
+/* header nav {
     position: absolute;
     width: 100%;
     left: 0;
     top: 0;
     z-index: -1;
-    background: rgb(176, 10, 10);
+    background: var(--main-color--darkened);
     padding-left: 20px;
     box-sizing: border-box;
-}
+} */
 /* nav {
     background: var(--main-color--darkened);
     padding-left: 20px;
 } */
-header nav ul {
+/* header nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
+
 header nav li {
     padding: 0;
 }
+
 header nav a {
     padding: 20px;
     display: block;
     color: white;
     text-decoration: none;
 }
+ */
 header button {
     border: none;
     width: 30px;
@@ -507,7 +510,7 @@ header button {
     background: transparent;
     background-image: repeating-linear-gradient(#ffffff, #ffffff 20%, transparent 20%, transparent 40%);
     display: block;
-    float: left;
+    float: right;
 }
 @media screen and (max-width: 479px) {
 
@@ -521,7 +524,7 @@ header button {
 }
 @media screen and (max-width: 767px) {
     .menu-visible {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     .menu-visible header,
@@ -529,21 +532,17 @@ header button {
     .menu-visible #sponsorer,
     .menu-visible main,
     .menu-visible footer {
-        -webkit-transform: translate(80%, 0);
-                transform: translate(80%, 0);
+        -webkit-transform: translate(-220px, 0);
+                transform: translate(-220px, 0);
     }
 
-    .menu-visible header nav {
-        -webkit-transform: translate(-80%, 0);
-                transform: translate(-80%, 0);
-    }
 
 }
 @media screen and (min-width: 768px) {
     header button {
         display: none;
     }
-    header nav {
+    /* header nav {
         clear: left;
         position: static;
         width: auto;
@@ -551,11 +550,9 @@ header button {
     }
 
     header nav ul {
-        display: -webkit-flex;
-        display: -ms-flexbox;
         display: flex;
         direction: row;
-    }
+    } */
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
@@ -582,34 +579,76 @@ flex-direction: column; */
 footer * {
     color: white;
 }
-/* nav {
-    background: var(--main-color--darkened);
+nav {
+    background: rgb(176, 10, 10);
     padding-left: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    z-index: -1;
+    -webkit-transform: translate(220px, 0);
+            transform: translate(220px, 0);
 }
-
+.menu-visible nav {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+}
 nav ul {
-    display: flex;
-    direction: row;
     padding: 0;
     margin: 0;
     list-style-type: none;
 }
-
 nav li {
     padding: 0;
 }
-
 nav a {
     padding: 20px;
     display: block;
     color: white;
     text-decoration: none;
 }
-
 nav a:hover {
 
 }
- */
+@media screen and (max-width: 479px) {
+
+}
+@media screen and (min-width: 480px) {
+
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+@media screen and (min-width: 768px) {
+
+    nav {
+        position: static;
+        width: auto;
+        height: auto;
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+    }
+    nav ul {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        direction: row;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+@media screen and (min-width: 1024px) {
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+}
+@media screen and (min-width: 1280px) {
+
+}
 #plakat {
     height: 200px;
     padding: 20px 40px;
