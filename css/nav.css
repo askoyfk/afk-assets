@@ -1,11 +1,20 @@
-/* nav {
+ nav {
     background: var(--main-color--darkened);
     padding-left: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    z-index: -1;
+    transform: translate(220px, 0);
+}
+
+.menu-visible nav {
+    transform: translate(0, 0);
 }
 
 nav ul {
-    display: flex;
-    direction: row;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -25,4 +34,46 @@ nav a {
 nav a:hover {
 
 }
- */
+
+@media screen and (--tiny-max) {
+
+}
+
+@media screen and (--small-min) {
+
+}
+
+@media screen and (--small-min) and (--small-max) {
+
+}
+
+@media screen and (--medium-min) {
+
+    nav {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translate(0, 0);
+    }
+    nav ul {
+        display: flex;
+        direction: row;
+    }
+}
+
+@media screen and (--medium-min) and (--medium-max) {
+
+}
+
+
+@media screen and (--large-min) {
+
+}
+
+@media screen and (--large-min) and (--large-max) {
+
+}
+
+@media screen and (--huge-min) {
+
+}
