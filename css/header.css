@@ -1,4 +1,4 @@
-header, #plakat, #sponsorer, main, footer, nav {
+header, #plakat, #sponsorer, main, footer {
     transition: transform .3s ease;
 }
 
@@ -92,6 +92,9 @@ header button {
 @media screen and (--medium-min) {
     header button {
         display: none;
+    }
+    header, #plakat, #sponsorer, main, footer {
+        transition: none;
     }
     /* header nav {
         clear: left;

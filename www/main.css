@@ -458,7 +458,7 @@ main {
 h1, p {
     margin: 0;
 }
-header, #plakat, #sponsorer, main, footer, nav {
+header, #plakat, #sponsorer, main, footer {
     transition: -webkit-transform .3s ease;
     transition: transform .3s ease;
 }
@@ -542,6 +542,9 @@ header button {
     header button {
         display: none;
     }
+    header, #plakat, #sponsorer, main, footer {
+        transition: none;
+    }
     /* header nav {
         clear: left;
         position: static;
@@ -590,6 +593,8 @@ nav {
     z-index: -1;
     -webkit-transform: translate(220px, 0);
             transform: translate(220px, 0);
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
 }
 .menu-visible nav {
     -webkit-transform: translate(0, 0);
@@ -624,6 +629,7 @@ nav a:hover {
 @media screen and (min-width: 768px) {
 
     nav {
+        transition: none;
         position: static;
         width: auto;
         height: auto;

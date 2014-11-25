@@ -8,6 +8,7 @@
     height: 100%;
     z-index: -1;
     transform: translate(220px, 0);
+    transition: transform .3s ease;
 }
 
 .menu-visible nav {
@@ -50,6 +51,7 @@ nav a:hover {
 @media screen and (--medium-min) {
 
     nav {
+        transition: none;
         position: static;
         width: auto;
         height: auto;
