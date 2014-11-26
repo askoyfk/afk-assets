@@ -76,15 +76,16 @@ header button {
 @media screen and (--small-max) {
     .menu-visible {
         overflow-x: hidden;
-    }
-
-    .menu-visible header,
-    .menu-visible #plakat,
-    .menu-visible #sponsorer,
-    .menu-visible main,
-    .menu-visible footer {
         transform: translate(-220px, 0);
     }
+
+/*     .menu-visible header,
+.menu-visible #plakat,
+.menu-visible #sponsorer,
+.menu-visible main,
+.menu-visible footer {
+
+} */
 
 
 }

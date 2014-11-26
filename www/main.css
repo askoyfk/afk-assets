@@ -425,9 +425,10 @@ th {
 :root { /* rgb(221, 25, 29), #dd191d */ /* rgb(176, 18, 10),  #b0120a */
 }
 /* breakpoints */
-html, body {
+html, body, #wrapper {
     margin: 0;
-    padding: 0
+    padding: 0;
+    height: 100%
 
     /* overflow-x: hidden; */
     /* position: fixed; */
@@ -525,16 +526,17 @@ header button {
 @media screen and (max-width: 767px) {
     .menu-visible {
         overflow-x: hidden;
-    }
-
-    .menu-visible header,
-    .menu-visible #plakat,
-    .menu-visible #sponsorer,
-    .menu-visible main,
-    .menu-visible footer {
         -webkit-transform: translate(-220px, 0);
                 transform: translate(-220px, 0);
     }
+
+/*     .menu-visible header,
+.menu-visible #plakat,
+.menu-visible #sponsorer,
+.menu-visible main,
+.menu-visible footer {
+
+} */
 
 
 }
@@ -597,8 +599,7 @@ nav {
     transition: transform .3s ease;
 }
 .menu-visible nav {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    /* transform: translate(0, 0); */
 }
 nav ul {
     padding: 0;
