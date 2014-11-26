@@ -425,9 +425,10 @@ th {
 :root { /* rgb(221, 25, 29), #dd191d */ /* rgb(176, 18, 10),  #b0120a */
 }
 /* breakpoints */
-html, body {
+html, body, #wrapper {
     margin: 0;
-    padding: 0
+    padding: 0;
+    height: 100%
 
     /* overflow-x: hidden; */
     /* position: fixed; */
@@ -458,7 +459,13 @@ main {
 h1, p {
     margin: 0;
 }
-header, #plakat, #sponsorer, main, footer, nav {
+/* header, #plakat, #sponsorer, main, footer {
+    transition: transform .3s ease;
+}
+ */
+body {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
     transition: -webkit-transform .3s ease;
     transition: transform .3s ease;
 }
@@ -525,22 +532,27 @@ header button {
 @media screen and (max-width: 767px) {
     .menu-visible {
         overflow-x: hidden;
-    }
-
-    .menu-visible header,
-    .menu-visible #plakat,
-    .menu-visible #sponsorer,
-    .menu-visible main,
-    .menu-visible footer {
         -webkit-transform: translate(-220px, 0);
                 transform: translate(-220px, 0);
+
     }
+
+/*     .menu-visible header,
+.menu-visible #plakat,
+.menu-visible #sponsorer,
+.menu-visible main,
+.menu-visible footer {
+
+} */
 
 
 }
 @media screen and (min-width: 768px) {
     header button {
         display: none;
+    }
+    header, #plakat, #sponsorer, main, footer {
+        transition: none;
     }
     /* header nav {
         clear: left;
@@ -590,10 +602,12 @@ nav {
     z-index: -1;
     -webkit-transform: translate(220px, 0);
             transform: translate(220px, 0);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch
+    /* transition: transform .3s ease; */
 }
 .menu-visible nav {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    /* transform: translate(0, 0); */
 }
 nav ul {
     padding: 0;
@@ -624,6 +638,7 @@ nav a:hover {
 @media screen and (min-width: 768px) {
 
     nav {
+        transition: none;
         position: static;
         width: auto;
         height: auto;
