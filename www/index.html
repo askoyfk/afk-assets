@@ -17,70 +17,62 @@
 <body data-menu-visible="true">
 
 
+    <div id="wrapper">
+        <header>
 
+            <h1>Askøy Fotballklubb</h1>
 
-    <header>
+            <button>Meny</button>
 
+            <script>
+                [].pop.call(document.getElementsByTagName('button')).addEventListener('click', function() {
+                    document.body.classList.toggle('menu-visible');
+                });
+            </script>
 
+        </header>
 
+        <nav>
+            <ul>
+                <li><a href="#">Klubben</a></li>
+                <li><a href="#">Lag</a></li>
+                <li><a href="#">Baner</a></li>
+                <li><a href="#">Kalender</a></li>
+                <li><a href="#">Arrangement</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
 
-        <h1>Askøy Fotballklubb</h1>
+        <section id="plakat">
+            <h1>Nobi julecup</h1>
+        </section>
 
-        <button>Meny</button>
+        <section id="sponsorer">
+            <h1>Sponsorer</h1>
+        </section>
 
-        <script>
-            [].pop.call(document.getElementsByTagName('button')).addEventListener('click', function() {
-                document.body.classList.toggle('menu-visible');
-            });
-        </script>
+        <main>
 
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#">Klubben</a></li>
-            <li><a href="#">Lag</a></li>
-            <li><a href="#">Baner</a></li>
-            <li><a href="#">Kalender</a></li>
-            <li><a href="#">Arrangement</a></li>
-            <li><a href="#">Kontakt</a></li>
-        </ul>
-    </nav>
-
-    <section id="plakat">
-        <h1>Nobi julecup</h1>
-    </section>
-
-    <section id="sponsorer">
-        <h1>Sponsorer</h1>
-    </section>
-
-    <main>
-
-        <div class="boxes boxes-4">
-            <div class="box">
-                <h2>Barn</h2>
+            <div class="boxes boxes-4">
+                <div class="box">
+                    <h2>Barn</h2>
+                </div>
+                <div class="box">
+                    <h2>Ungdom</h2>
+                </div>
+                <div class="box">
+                    <h2>Senior</h2>
+                </div>
+                <div class="box">
+                    <h2>Stjerne</h2>
+                </div>
             </div>
-            <div class="box">
-                <h2>Ungdom</h2>
-            </div>
-            <div class="box">
-                <h2>Senior</h2>
-            </div>
-            <div class="box">
-                <h2>Stjerne</h2>
-            </div>
-        </div>
-    </main>
+        </main>
 
-
-
-    <!-- <script src="script.js"></script> -->
-
-    <footer>
-        <p>info</p>
-    </footer>
-
+        <footer>
+            <p>info</p>
+        </footer>
+    </div>
 
     <script src="script/script.js"></script>
 

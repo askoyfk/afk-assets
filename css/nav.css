@@ -6,9 +6,11 @@
     right: 0;
     width: 200px;
     height: 100%;
-    z-index: -1;
-    transform: translate(220px, 0);
-    transition: transform .3s ease;
+/*     z-index: -1; */
+    /* transform: translate(220px, 0); */
+/*     overflow-y: scroll;
+-webkit-overflow-scrolling: touch; */
+    /* transition: transform .3s ease; */
 }
 
 .menu-visible nav {

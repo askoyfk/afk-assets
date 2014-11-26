@@ -1,7 +1,13 @@
-header, #plakat, #sponsorer, main, footer {
+/* header, #plakat, #sponsorer, main, footer {
     transition: transform .3s ease;
 }
+ */
 
+/* body {
+    transform: translate(0, 0);
+    transition: transform .3s ease;
+}
+ */
 header {
     background: var(--main-color);
     padding: 20px 40px;
@@ -74,10 +80,11 @@ header button {
 }
 
 @media screen and (--small-max) {
-    .menu-visible {
-        overflow-x: hidden;
-        transform: translate(-220px, 0);
-    }
+/*     .menu-visible {
+    overflow-x: hidden;
+    transform: translate(-220px, 0);
+
+} */
 
 /*     .menu-visible header,
 .menu-visible #plakat,
