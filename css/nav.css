@@ -8,12 +8,8 @@
     height: 100%;
     transform: translate(220px, 0);
     transition: transform .3s ease;
-
-/*     z-index: -1; */
-    /* transform: translate(220px, 0); */
-/*     overflow-y: scroll;
--webkit-overflow-scrolling: touch; */
-    /* transition: transform .3s ease; */
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .menu-visible nav {
@@ -72,6 +68,7 @@ nav a:hover {
         height: auto;
         transform: translate(0, 0);
         clear: left;
+        overflow-y: auto;
     }
     nav ul {
         display: flex;

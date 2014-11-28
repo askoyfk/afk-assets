@@ -1,19 +1,8 @@
-/* header, #plakat, #sponsorer, main, footer {
-    transition: transform .3s ease;
-}
- */
 
-/* body {
-    transform: translate(0, 0);
-    transition: transform .3s ease;
-}
- */
 header {
     background: var(--main-color);
     padding: 20px 40px;
     overflow: hidden;
-/*     display: flex;
-flex-direction: column; */
 }
 
 header h1 {

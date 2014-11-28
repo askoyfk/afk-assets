@@ -13,30 +13,8 @@ function testMedia(mq) {
     if (hugeMin.matches) {
         header.appendChild(menu);
     } else if (smallMax.matches) {
-        document.body.insertBefore(menu, wrapper.nextSibling);
+        wrapper.parentNode.insertBefore(menu, wrapper.nextSibling);
     } else {
         header.parentNode.insertBefore(menu, header.nextSibling);
     }
 }
-
-// function isHuge(mq) {
-//     if (hugeMin.matches) {
-//         console.log('huge');
-//         header.appendChild(menu);
-//       /* the view port is at least 400 pixels wide */
-//     } else {
-//         header.parentNode.insertBefore(menu, header.nextSibling);
-//         console.log('less than huge');
-//       /* the view port is less than 400 pixels wide */
-//     }
-// }
-//
-// function isSmall(mq) {
-//     if (smallMax.matches) {
-//         console.log('small or less');
-//         document.body.insertBefore(menu, wrapper.nextSibling);
-//     } else {
-//         console.log('not small');
-//         wrapper.insertBefore(menu, header.nextSibling);
-//     }
-// }

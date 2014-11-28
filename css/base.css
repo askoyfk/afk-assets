@@ -25,7 +25,7 @@ body {
 }
 
 main {
-    flex-grow: 1; /* note to self: flex: 1 er buggy i ie10, selv om det er shorthand for flex-grow, flex-shrink og flex-basis */    
+    flex-grow: 1; /* note to self: flex: 1 er buggy i ie10, selv om det er shorthand for flex-grow, flex-shrink og flex-basis */
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
