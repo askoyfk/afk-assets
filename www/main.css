@@ -425,7 +425,7 @@ th {
 :root { /* rgb(221, 25, 29), #dd191d */ /* rgb(176, 18, 10),  #b0120a */
 }
 /* breakpoints */
-html, body, #wrapper {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%
@@ -434,7 +434,9 @@ html, body, #wrapper {
     /* position: fixed; */
     /* min-height: 100%; */
 }
-body {
+#wrapper {
+    z-index: 1;
+    background: white;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -442,32 +444,66 @@ body {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+body {
     font-family: HelveticaNeue;
-
 }
 main {
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    /* min-height: 100%; */
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; /* note to self: flex: 1 er buggy i ie10, selv om det er shorthand for flex-grow, flex-shrink og flex-basis */
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
     width: 100%;
     box-sizing: border-box;
+    background: pink;
+    overflow: hidden;
+
 }
 h1, p {
     margin: 0;
 }
-header, #plakat, #sponsorer, main, footer {
-    transition: -webkit-transform .3s ease;
-    transition: transform .3s ease;
+@media screen and (max-width: 479px) {
+
+}
+@media screen and (min-width: 480px) {
+
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+@media screen and (max-width: 767px) {
+    .menu-visible #wrapper {
+        -webkit-transform: translate(-220px, 0);
+                transform: translate(-220px, 0);
+    }
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+}
+@media screen and (min-width: 1024px) {
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+}
+@media screen and (min-width: 1280px) {
+
 }
 header {
     background: rgb(222, 26, 26);
-    padding: 20px 40px
-/*     display: flex;
-flex-direction: column; */
+    padding: 20px 40px;
+    overflow: hidden;
 }
 header h1 {
     float: left;
@@ -524,11 +560,11 @@ header button {
 
 }
 @media screen and (max-width: 767px) {
-    .menu-visible {
-        overflow-x: hidden;
-        -webkit-transform: translate(-220px, 0);
-                transform: translate(-220px, 0);
-    }
+/*     .menu-visible {
+    overflow-x: hidden;
+    transform: translate(-220px, 0);
+
+} */
 
 /*     .menu-visible header,
 .menu-visible #plakat,
@@ -592,11 +628,12 @@ nav {
     right: 0;
     width: 200px;
     height: 100%;
-    z-index: -1;
     -webkit-transform: translate(220px, 0);
             transform: translate(220px, 0);
     transition: -webkit-transform .3s ease;
     transition: transform .3s ease;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .menu-visible nav {
     /* transform: translate(0, 0); */
@@ -627,6 +664,15 @@ nav a:hover {
 @media screen and (min-width: 480px) and (max-width: 767px) {
 
 }
+@media screen and (max-width: 767px) {
+    .menu-visible nav {
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+    }
+    #wrapper nav {
+        display: none;
+    }
+}
 @media screen and (min-width: 768px) {
 
     nav {
@@ -636,6 +682,8 @@ nav a:hover {
         height: auto;
         -webkit-transform: translate(0, 0);
                 transform: translate(0, 0);
+        clear: left;
+        overflow-y: auto;
     }
     nav ul {
         display: -webkit-flex;
