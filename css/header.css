@@ -11,6 +11,7 @@
 header {
     background: var(--main-color);
     padding: 20px 40px;
+    overflow: hidden;
 /*     display: flex;
 flex-direction: column; */
 }

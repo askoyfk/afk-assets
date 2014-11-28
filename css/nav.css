@@ -6,6 +6,9 @@
     right: 0;
     width: 200px;
     height: 100%;
+    transform: translate(220px, 0);
+    transition: transform .3s ease;
+
 /*     z-index: -1; */
     /* transform: translate(220px, 0); */
 /*     overflow-y: scroll;
@@ -50,6 +53,16 @@ nav a:hover {
 
 }
 
+@media screen and (--small-max) {
+    .menu-visible nav {
+        transform: translate(0, 0);
+    }
+    #wrapper nav {
+        display: none;
+    }
+}
+
+
 @media screen and (--medium-min) {
 
     nav {
@@ -58,6 +71,7 @@ nav a:hover {
         width: auto;
         height: auto;
         transform: translate(0, 0);
+        clear: left;
     }
     nav ul {
         display: flex;

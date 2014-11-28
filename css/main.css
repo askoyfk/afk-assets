@@ -1,4 +1,5 @@
 @import 'node_modules//normalize.css/normalize.css';
+@import 'css/clearfix.css';
 @import 'css/config.css';
 @import 'css/base.css';
 @import 'css/header.css';
