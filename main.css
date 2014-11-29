@@ -457,13 +457,12 @@ body {
 main {
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
-            flex-grow: 1; /* note to self: flex: 1 er buggy i ie10, selv om det er shorthand for flex-grow, flex-shrink og flex-basis */    
+            flex-grow: 1; /* note to self: flex: 1 er buggy i ie10, selv om det er shorthand for flex-grow, flex-shrink og flex-basis */
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
     width: 100%;
     box-sizing: border-box;
-    background: pink;
     overflow: hidden;
 
 }
@@ -500,65 +499,45 @@ h1, p {
 @media screen and (min-width: 1280px) {
 
 }
-/* header, #plakat, #sponsorer, main, footer {
-    transition: transform .3s ease;
-}
- */
-/* body {
-    transform: translate(0, 0);
-    transition: transform .3s ease;
-}
- */
 header {
     background: rgb(222, 26, 26);
-    padding: 20px 40px;
-    overflow: hidden
-/*     display: flex;
-flex-direction: column; */
+    padding: 10px 40px;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+#logo {
+    width: 100px;
+    height: auto;
+
 }
 header h1 {
-    float: left;
+    /* float: left; */
 }
-/* header nav {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    background: var(--main-color--darkened);
-    padding-left: 20px;
-    box-sizing: border-box;
-} */
-/* nav {
-    background: var(--main-color--darkened);
-    padding-left: 20px;
-} */
-/* header nav ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-header nav li {
-    padding: 0;
-}
-
-header nav a {
-    padding: 20px;
-    display: block;
-    color: white;
-    text-decoration: none;
-}
- */
 header button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
     border: none;
     width: 30px;
     height: 30px;
     text-indent: -9000px;
     background: transparent;
     background-image: repeating-linear-gradient(#ffffff, #ffffff 20%, transparent 20%, transparent 40%);
-    display: block;
-    float: right;
+    display: block
+    /* margin: auto; */
+    /* align-self: flex-end; */
+    /* float: right; */
 }
 @media screen and (max-width: 479px) {
 
@@ -571,6 +550,7 @@ header button {
 
 }
 @media screen and (max-width: 767px) {
+
 /*     .menu-visible {
     overflow-x: hidden;
     transform: translate(-220px, 0);
@@ -588,6 +568,16 @@ header button {
 
 }
 @media screen and (min-width: 768px) {
+    #logo {
+        width: 200px;
+    }
+    header {
+        padding: 10px 40px;
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
+                justify-content: flex-start
+        /* align-items: flex-start; */
+    }
     header button {
         display: none;
     }
@@ -616,10 +606,14 @@ header button {
 
 }
 @media screen and (min-width: 1280px) {
+    header {
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
 
     header nav {
-        float: right;
-        clear: none;
+
     }
 }
 footer {
@@ -642,13 +636,9 @@ nav {
     -webkit-transform: translate(220px, 0);
             transform: translate(220px, 0);
     transition: -webkit-transform .3s ease;
-    transition: transform .3s ease
-
-/*     z-index: -1; */
-    /* transform: translate(220px, 0); */
-/*     overflow-y: scroll;
--webkit-overflow-scrolling: touch; */
-    /* transition: transform .3s ease; */
+    transition: transform .3s ease;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .menu-visible nav {
     /* transform: translate(0, 0); */
@@ -698,6 +688,7 @@ nav a:hover {
         -webkit-transform: translate(0, 0);
                 transform: translate(0, 0);
         clear: left;
+        overflow-y: auto;
     }
     nav ul {
         display: -webkit-flex;
