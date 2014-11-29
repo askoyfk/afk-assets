@@ -1,50 +1,28 @@
 
 header {
     background: var(--main-color);
-    padding: 20px 40px;
+    padding: 10px 40px;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+
 }
 
 header h1 {
-    float: left;
+    /* float: left; */
 }
-
-/* header nav {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    background: var(--main-color--darkened);
-    padding-left: 20px;
-    box-sizing: border-box;
-} */
-
-/* nav {
-    background: var(--main-color--darkened);
-    padding-left: 20px;
-} */
-
-/* header nav ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
-
-header nav li {
-    padding: 0;
-}
-
-header nav a {
-    padding: 20px;
-    display: block;
-    color: white;
-    text-decoration: none;
-}
- */
-
 
 header button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
     border: none;
     width: 30px;
     height: 30px;
@@ -52,7 +30,9 @@ header button {
     background: transparent;
     background-image: repeating-linear-gradient(#ffffff, #ffffff 20%, transparent 20%, transparent 40%);
     display: block;
-    float: right;
+    /* margin: auto; */
+    /* align-self: flex-end; */
+    /* float: right; */
 }
 
 
@@ -70,6 +50,7 @@ header button {
 }
 
 @media screen and (--small-max) {
+
 /*     .menu-visible {
     overflow-x: hidden;
     transform: translate(-220px, 0);
@@ -88,6 +69,14 @@ header button {
 }
 
 @media screen and (--medium-min) {
+    #logo {
+        width: 200px;
+    }
+    header {
+        padding: 10px 40px;
+        justify-content: flex-start;
+        /* align-items: flex-start; */
+    }
     header button {
         display: none;
     }
@@ -121,9 +110,11 @@ header button {
 }
 
 @media screen and (--huge-min) {
+    header {
+        justify-content: space-between;
+    }
 
     header nav {
-        float: right;
-        clear: none;
+
     }
 }
