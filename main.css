@@ -543,7 +543,11 @@ header button {
 
 }
 @media screen and (min-width: 480px) {
-
+    header {        
+        -webkit-justify-content: flex-start;        
+            -ms-flex-pack: start;        
+                justify-content: flex-start;
+    }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
 
@@ -572,10 +576,7 @@ header button {
         width: 200px;
     }
     header {
-        padding: 10px 40px;
-        -webkit-justify-content: flex-start;
-            -ms-flex-pack: start;
-                justify-content: flex-start
+        padding: 10px 40px
         /* align-items: flex-start; */
     }
     header button {
