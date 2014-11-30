@@ -33,7 +33,7 @@
                 fill: transparent;
             }
 
-            @media screen and (max-width: 200px) {
+            @media screen and (max-width: 199px) {
                 .letter-stroke-inner {
                     stroke-width: 7;
                 }
@@ -49,7 +49,7 @@
                 fill: url(#gradient);
             }
 
-            @media screen and (max-width: 200px) {
+            @media screen and (max-width: 199px) {
                 #ellipse, .letter-fill {
                     fill: #888;
                 }
