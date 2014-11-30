@@ -10,7 +10,7 @@
 }
 
 .boxes {
-    display: flex;    
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -30,9 +30,7 @@
 }
 
 @media screen and (--medium-min) {
-    .box {
-        width: calc(25% - 20px);
-    }
+
 }
 
 @media screen and (--medium-min) and (--medium-max) {
@@ -41,7 +39,9 @@
 
 
 @media screen and (--large-min) {
-
+    .box {
+        width: calc(25% - 20px);
+    }
 }
 
 @media screen and (--large-min) and (--large-max) {
