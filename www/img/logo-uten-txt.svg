@@ -57,7 +57,7 @@
 
             @media screen and (max-width: 150px) {
                 #ellipse, .letter-fill {
-                    fill: #ccc;
+                    fill: #fff;
                 }
             }
 
