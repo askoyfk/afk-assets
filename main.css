@@ -777,7 +777,7 @@ nav a:hover {
 
 }
 .box {
-    background: pink;
+    background: orange;
     /* width: 25%; */
     padding: 20px;
     box-sizing: border-box;
@@ -789,9 +789,9 @@ nav a:hover {
 .boxes {
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;    
-    -webkit-flex-wrap: wrap;    
-        -ms-flex-wrap: wrap;    
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
             flex-wrap: wrap;
 }
 @media screen and (max-width: 479px) {
@@ -806,15 +806,15 @@ nav a:hover {
 
 }
 @media screen and (min-width: 768px) {
-    .box {
-        width: calc(25% - 20px);
-    }
+
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
 
 }
 @media screen and (min-width: 1024px) {
-
+    .box {
+        width: calc(25% - 20px);
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
 
