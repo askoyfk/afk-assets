@@ -7,12 +7,25 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+}
+
+#header {
+    height: 100px;
+    width: 100%;
+    outline: 1px solid gray;
+
 }
 
 #logo {
     width: 100px;
     height: auto;
+}
 
+#logo-text {
+    height: 70px;
+    width: auto;
+    margin-left: 20px;
 }
 
 header h1 {
@@ -41,7 +54,7 @@ header button {
 }
 
 @media screen and (--small-min) {
-    header {        
+    header {
         justify-content: flex-start;
     }
 }
@@ -113,6 +126,12 @@ header button {
 @media screen and (--huge-min) {
     header {
         justify-content: space-between;
+    }
+
+    #header {
+        flex-grow: 1;
+        box-sizing: border-box;
+        /* width: 55%; */
     }
 
     header nav {

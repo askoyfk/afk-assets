@@ -515,11 +515,22 @@ header {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
+
+}
+#header {
+    height: 100px;
+    width: 100%;
+    outline: 1px solid gray;
+
 }
 #logo {
     width: 100px;
     height: auto;
-
+}
+#logo-text {
+    height: 70px;
+    width: auto;
+    margin-left: 20px;
 }
 header h1 {
     /* float: left; */
@@ -543,9 +554,9 @@ header button {
 
 }
 @media screen and (min-width: 480px) {
-    header {        
-        -webkit-justify-content: flex-start;        
-            -ms-flex-pack: start;        
+    header {
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
                 justify-content: flex-start;
     }
 }
@@ -613,6 +624,14 @@ header button {
                 justify-content: space-between;
     }
 
+    #header {
+        -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        box-sizing: border-box
+        /* width: 55%; */
+    }
+
     header nav {
 
     }
@@ -647,6 +666,8 @@ nav {
     transition: transform .3s ease;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+
+
 }
 .menu-visible nav {
     /* transform: translate(0, 0); */
@@ -655,6 +676,7 @@ nav ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
+    box-sizing: border-box;
 }
 nav li {
     padding: 0;
@@ -712,13 +734,20 @@ nav a:hover {
 
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-
+/*     #logo-text {
+    width: calc(100% - 200px);
 }
+ */}
 @media screen and (min-width: 1280px) {
-
+/*     nav {
+    flex: 1;
+}
+nav ul {
+    float: right;
+} */
 }
 #plakat {
-    height: 200px;
+    height: 400px;
     padding: 20px 40px;
     box-sizing: border-box;
     background: orange;
