@@ -33,9 +33,34 @@
                 fill: transparent;
             }
 
+            @media screen and (max-width: 199px) {
+                .letter-stroke-inner {
+                    stroke-width: 7;
+                }
+            }
+
+            @media screen and (max-width: 150px) {
+                .letter-stroke-inner {
+                    display: none;
+                }
+            }
+
             #ellipse, .letter-fill {
                 fill: url(#gradient);
             }
+
+            @media screen and (max-width: 199px) {
+                #ellipse, .letter-fill {
+                    fill: #888;
+                }
+            }
+
+            @media screen and (max-height: 150px) {
+                #ellipse, .letter-fill {
+                    fill: #fff;
+                }
+            }
+
 
             .word, .digit {
                 fill: #000;
@@ -52,13 +77,15 @@
                 fill: #D9222A;
             }
 
-            #text {
-                -webkit-transform: scale(2.6) translate(270px, -400px);
-                <!-- transform: translate(2300px, 0); -->
-            }
+            @media screen and (max-height: 150px) {
+                #text {
+                    -webkit-transform: scale(2.6) translate(270px, -400px);
+                    <!-- transform: translate(2300px, 0); -->
+                }
 
-            #askoy {
-                -webkit-transform: translate(-200px, 0);
+                #askoy {
+                    -webkit-transform: translate(-200px, 0);
+                }
             }
 
         </style>

@@ -11,8 +11,17 @@ header {
 
 #logo {
     width: 100px;
-    height: auto;
+    height: 50px;
+}
 
+#logo-text-wrapper {
+    display: none;
+    flex: 1;
+
+}
+#logo-text {
+    width:100%; height: 50px;
+    max-width: 900px;
 }
 
 header h1 {
@@ -20,10 +29,12 @@ header h1 {
 }
 
 header button {
-    position: absolute;
-    right: 20px;
-    top: 20px;
+position: absolute;
+right: 40px;
+top: 20px;
+
     border: none;
+    margin-left: 20px;
     width: 30px;
     height: 30px;
     text-indent: -9000px;
@@ -41,8 +52,14 @@ header button {
 }
 
 @media screen and (--small-min) {
-    header {        
+    header button {
+        position: static;
+    }
+    header {
         justify-content: flex-start;
+    }
+    #logo-text-wrapper {
+        display: block;
     }
 }
 
@@ -73,7 +90,12 @@ header button {
 @media screen and (--medium-min) {
     #logo {
         width: 200px;
+        height: auto;
     }
+    #logo-text {
+        height: 100px;
+    }
+
     header {
         padding: 10px 40px;
         /* align-items: flex-start; */
@@ -103,7 +125,9 @@ header button {
 
 
 @media screen and (--large-min) {
-
+    header {
+        justify-content: space-between;
+    }
 }
 
 @media screen and (--large-min) and (--large-max) {

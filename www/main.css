@@ -518,17 +518,29 @@ header {
 }
 #logo {
     width: 100px;
-    height: auto;
+    height: 50px;
+}
+#logo-text-wrapper {
+    display: none;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 
+}
+#logo-text {
+    width:100%; height: 50px;
+    max-width: 900px;
 }
 header h1 {
     /* float: left; */
 }
 header button {
-    position: absolute;
-    right: 20px;
-    top: 20px;
+position: absolute;
+right: 40px;
+top: 20px;
+
     border: none;
+    margin-left: 20px;
     width: 30px;
     height: 30px;
     text-indent: -9000px;
@@ -543,10 +555,16 @@ header button {
 
 }
 @media screen and (min-width: 480px) {
-    header {        
-        -webkit-justify-content: flex-start;        
-            -ms-flex-pack: start;        
+    header button {
+        position: static;
+    }
+    header {
+        -webkit-justify-content: flex-start;
+            -ms-flex-pack: start;
                 justify-content: flex-start;
+    }
+    #logo-text-wrapper {
+        display: block;
     }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -574,7 +592,12 @@ header button {
 @media screen and (min-width: 768px) {
     #logo {
         width: 200px;
+        height: auto;
     }
+    #logo-text {
+        height: 100px;
+    }
+
     header {
         padding: 10px 40px
         /* align-items: flex-start; */
@@ -601,7 +624,11 @@ header button {
 
 }
 @media screen and (min-width: 1024px) {
-
+    header {
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
 
@@ -715,7 +742,9 @@ nav a:hover {
 
 }
 @media screen and (min-width: 1280px) {
-
+    header nav {
+        margin-left: 20px;
+    }
 }
 #plakat {
     height: 200px;
