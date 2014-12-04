@@ -20,6 +20,7 @@
     <div id="wrapper">
         <header>
 
+<<<<<<< HEAD
             <object id="logo" type="image/svg+xml" data="img/logo-uten-txt.svg" style="margin-right: 20px;"></object>
 
             <div id="logo-text-wrapper">
@@ -28,10 +29,15 @@
 
 
             <!-- <object id="logo" type="image/svg+xml" data="img/logo-responsive.svg"></object> -->
+=======
+            <!-- <object id="header" type="image/svg+xml" data="logo/header.svg" style="display:flex"></object> -->
+            <object id="logo" type="image/svg+xml" data="img/logo-uten-txt.svg"></object>
+<!--             <object id="logo-text" type="image/svg+xml" data="img/logo-text.svg"></object>
+ -->
+            <!-- <h1>Askøy Fotballklubb</h1>  -->
+>>>>>>> 6e8e7441057f45aafbae775e04cf2a9163910a27
 
-            <!-- <h1>Askøy Fotballklubb</h1> -->
-
-            <button>Meny</button>
+             <button>Meny</button>
 
             <script>
                 [].pop.call(document.getElementsByTagName('button')).addEventListener('click', function() {
