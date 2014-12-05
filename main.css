@@ -747,10 +747,11 @@ nav a:hover {
     }
 }
 #plakat {
-    height: 200px;
+    margin-top: 20px;
+    height: 400px;
     padding: 20px 40px;
     box-sizing: border-box;
-    background: orange;
+    background: rgb(222, 26, 26);
 }
 @media screen and (max-width: 479px) {
 
