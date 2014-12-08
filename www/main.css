@@ -675,6 +675,10 @@ nav {
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
 }
+header nav {
+    margin-left: 40px;
+    padding-left: 0;
+}
 .menu-visible nav {
     /* transform: translate(0, 0); */
 }
@@ -742,16 +746,14 @@ nav a:hover {
 
 }
 @media screen and (min-width: 1280px) {
-    header nav {
-        margin-left: 20px;
-    }
+
 }
 #plakat {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     height: 400px;
     padding: 20px 40px;
     box-sizing: border-box;
-    background: rgb(222, 26, 26);
+    background: #fff;
 }
 @media screen and (max-width: 479px) {
 
@@ -807,7 +809,7 @@ nav a:hover {
 
 }
 .box {
-    background: orange;
+    background: silver;
     /* width: 25%; */
     padding: 20px;
     box-sizing: border-box;
@@ -815,6 +817,19 @@ nav a:hover {
     margin-left: 10px;
     margin-right: 10px;
     width: 100%;
+    text-decoration: none;
+}
+.box h1,
+.box h2,
+.box h3 {
+    text-decoration: underline;
+}
+.box p {
+    text-decoration: none;
+    color: #333;
+}
+.box:hover {
+    background: #999;
 }
 .boxes {
     display: -webkit-flex;
@@ -823,6 +838,12 @@ nav a:hover {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+}
+.boxes a {
+    color: rgb(176, 10, 10);
+}
+.boxes :first-child {
+    margin-top: 0;
 }
 @media screen and (max-width: 479px) {
 

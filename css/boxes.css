@@ -1,5 +1,5 @@
 .box {
-    background: orange;
+    background: silver;
     /* width: 25%; */
     padding: 20px;
     box-sizing: border-box;
@@ -7,6 +7,22 @@
     margin-left: 10px;
     margin-right: 10px;
     width: 100%;
+    text-decoration: none;
+}
+
+.box h1,
+.box h2,
+.box h3 {
+    text-decoration: underline;
+}
+
+.box p {
+    text-decoration: none;
+    color: #333;
+}
+
+.box:hover {
+    background: #999;
 }
 
 .boxes {
@@ -14,6 +30,13 @@
     flex-wrap: wrap;
 }
 
+.boxes a {
+    color: var(--main-color--darkened);
+}
+
+.boxes :first-child {
+    margin-top: 0;
+}
 
 @media screen and (--tiny-max) {
 

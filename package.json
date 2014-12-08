@@ -1,16 +1,14 @@
 {
-  "name": "boilerplate",
+  "name": "afk-layout",
   "version": "1.0.0",
-  "description": "postcss boilerplate",
+  "description": "css for askoyfotballklubb.no",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "gulp",
     "css",
     "postcss",
-    "boilerplate"
+    "afk",
+    "askøy fotballklubb"
   ],
   "author": "Victor Nystad",
   "license": "ISC",
