@@ -2,10 +2,6 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-
-    /* overflow-x: hidden; */
-    /* position: fixed; */
-    /* min-height: 100%; */
 }
 
 #wrapper {
@@ -31,7 +27,6 @@ main {
     padding-left: 10px;
     width: 100%;
     box-sizing: border-box;
-    background: pink;
     overflow: hidden;
 
 }

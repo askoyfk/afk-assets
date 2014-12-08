@@ -1,8 +1,9 @@
 #plakat {
-    height: 200px;
+    /* margin-top: 20px; */
+    height: 400px;
     padding: 20px 40px;
     box-sizing: border-box;
-    background: orange;
+    background: #fff;
 }
 
 @media screen and (--tiny-max) {
