@@ -15,6 +15,7 @@ li.box {
 
 a.box {
     text-decoration: none;
+    display: block;
 }
 
 .box h1,
