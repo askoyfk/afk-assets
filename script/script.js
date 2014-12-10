@@ -56,7 +56,8 @@ function navigate(e) {
     xhr.send();
 
     xhr.onload = function() {
-        main.innerHTML = this.response;
+        main.innerHTML = marked(this.response);
+        main.setAttribute('class', page + ' subpage');
     }
 
 };
@@ -65,7 +66,7 @@ function navigate(e) {
 // go directly to specified page
 // !function(){
 //
-//     var page = 'klubben';
+//     var page = 'lag';
 //
 //     navigate({
 //         target: {
