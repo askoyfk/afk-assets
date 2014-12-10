@@ -10,6 +10,7 @@
     transition: transform .3s ease;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+    font-size: 1.6rem;
     font-weight: 700;
 }
 

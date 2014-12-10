@@ -2,6 +2,7 @@
     --main-color: hwb(0, 10%, 13%); /* rgb(221, 25, 29), #dd191d */
     --main-color--darkened: hwb(0, 4%, 31%); /* rgb(176, 18, 10),  #b0120a */
     --main-color--darkened-more: hwb(0, 4%, 50%);
+    --text-color: hwb(0, 20%, 80%);
 }
 
 

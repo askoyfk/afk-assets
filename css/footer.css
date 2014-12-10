@@ -3,6 +3,7 @@ footer {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    font-size: 1.6em;
     /* padding: 20px 40px; */
 /*     display: flex;
 flex-direction: column; */
@@ -10,4 +11,5 @@ flex-direction: column; */
 
 footer * {
     color: white;
+    margin: 0;
 }
