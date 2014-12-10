@@ -1,9 +1,14 @@
 html {
     font-size: 62.5%;
     color: var(--text-color);
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 main {
     font-size: 2rem;
+}
+
+main a {
+    color: var(--main-color--darkened);
 }
 
 h1 {
@@ -11,7 +16,16 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+main h2 {
+    margin-top: 5rem;
+}
+
+main h1 + h2 {
+    margin-top: 2rem;
 }
 
 strong {
@@ -28,6 +42,10 @@ main.subpage {
 
 /*     max-width: 700px;
 margin: 0 auto; */
+}
+
+main.subpage a {
+    font-weight: 900;
 }
 
 
