@@ -62,16 +62,3 @@ function navigate(e) {
 };
 
 
-// go directly to specified page
-function(){
-
-    var page = 'klubben';
-
-    navigate({
-        target: {
-            childNodes: [{
-                nodeValue: page
-            }]
-        }
-    })
-}()
