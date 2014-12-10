@@ -63,7 +63,7 @@ function navigate(e) {
 
 
 // go directly to specified page
-!function(){
+function(){
 
     var page = 'klubben';
 
