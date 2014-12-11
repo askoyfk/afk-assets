@@ -66,7 +66,7 @@ function navigate(e) {
 // go directly to specified page
 // !function(){
 //
-//     var page = 'lag';
+//     var page = 'kontakt';
 //
 //     navigate({
 //         target: {
