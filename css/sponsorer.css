@@ -1,8 +1,25 @@
 #sponsorer {
-    padding: 20px 40px;
+    padding: 10px 30px;
     box-sizing: border-box;
     background: silver;
     font-size: 1.6rem;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.sponsor {
+    height: 100%;
+    width: auto;
+    margin: 0 10px;
+}
+
+#vitek-logo {
+    height: 70%;    
+}
+
+#spv1-logo {
+    height: 70%;
 }
 
 #sponsorer p {

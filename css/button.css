@@ -6,5 +6,5 @@ button, .button {
 }
 
 button:hover, .button:hover {
-    background: var(--main-color--darkened-more);
+    background-color: var(--main-color--darkened-more);
 }

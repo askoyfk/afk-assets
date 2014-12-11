@@ -3,6 +3,7 @@ html {
     color: var(--text-color);
     font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 main {
     font-size: 2rem;
 }
@@ -39,15 +40,15 @@ main.subpage {
     max-width: 40em;
     width: auto;
     transition: transform .3s;
-
-/*     max-width: 700px;
-margin: 0 auto; */
 }
 
 main.subpage a {
     font-weight: 900;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
 
 @media screen and (--huge-min) {
     main.subpage {

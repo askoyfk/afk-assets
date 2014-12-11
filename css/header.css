@@ -26,26 +26,24 @@ header {
     max-width: 900px;
 }
 
-header h1 {
-    /* float: left; */
-}
 
 header button {
-position: absolute;
-right: 40px;
-top: 20px;
-
+    position: absolute;
+    right: 40px;
+    top: 20px;
     border: none;
     margin-left: 20px;
     width: 30px;
     height: 30px;
     text-indent: -9000px;
+    display: block;
+}
+
+
+header button,
+header button:hover {
     background: transparent;
     background-image: repeating-linear-gradient(#ffffff, #ffffff 20%, transparent 20%, transparent 40%);
-    display: block;
-    /* margin: auto; */
-    /* align-self: flex-end; */
-    /* float: right; */
 }
 
 

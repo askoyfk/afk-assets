@@ -1,21 +1,15 @@
 .box {
     background: white;
-    /* width: 25%; */
-    /* padding: 0; */
-/*     box-sizing: border-box;
-margin-bottom: 20px;
-margin-left: 10px;
-margin-right: 10px;
- */    font-size: 2rem;
-/*     outline: 1px solid red; */
+    font-size: 2rem;
+    transition: background .3s;
+}
+
+.box:hover {
+    background: silver;
 
 }
 
-/* a.box h2 {
-    text-decoration: none;
-    border-bottom: 1px solid red;
-} */
-
 a.box h2 {
+    font-size: 3rem;
     margin-bottom: .5em;
 }
