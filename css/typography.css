@@ -33,7 +33,7 @@ strong {
     font-weight: 900;
 }
 
-main.subpage {
+.subpage {
     margin: 20px 40px;
     box-sizing: border-box;
     padding: 0;
@@ -42,7 +42,7 @@ main.subpage {
     transition: transform .3s;
 }
 
-main.subpage a {
+main a {
     font-weight: 900;
 }
 
