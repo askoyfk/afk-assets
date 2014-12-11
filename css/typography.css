@@ -51,7 +51,7 @@ main a {
 }
 
 @media screen and (--huge-min) {
-    main.subpage {
+    .subpage {
         transform: translate(220px, 0);
     }
 }
