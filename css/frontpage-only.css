@@ -1,13 +1,20 @@
-#plakat {
-    /* margin-top: 20px; */
-    height: 400px;
-    padding: 20px 40px;
-    box-sizing: border-box;
-    background-color: #fff;
-    background-image: url(img/juletre.svg);
-    background-position: 100% 50%;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+.snow {
+    fill: #fff;
+}
+
+.box {
+    background: white;
+    font-size: 2rem;
+    transition: background .3s;
+}
+
+.box:hover {
+    background: silver;
+}
+
+a.box h2 {
+    font-size: 3rem;
+    margin-bottom: .5em;
 }
 
 

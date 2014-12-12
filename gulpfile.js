@@ -19,7 +19,7 @@ gulp.task('styles', function () {
         autoprefixer({ browsers: ['last 2 versions'] })
     ];
 
-    return gulp.src('css/main.css')
+    return gulp.src(['css/main.css', 'css/frontpage-only.css'])
     .pipe(postcss(processors))
     .pipe(gulp.dest('www'));
 });

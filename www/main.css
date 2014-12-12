@@ -800,7 +800,11 @@ nav a:hover {
     height: 400px;
     padding: 20px 40px;
     box-sizing: border-box;
-    background: #fff;
+    background-color: #fff;
+    background-image: url(img/juletre.svg);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 @media screen and (max-width: 479px) {
 
