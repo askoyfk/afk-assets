@@ -801,7 +801,7 @@ nav a:hover {
     padding: 20px 40px;
     box-sizing: border-box;
     background-color: #fff;
-    background-image: url(img/juletre.svg);
+    background-image: url(/img/juletre.svg);
     background-position: 100% 50%;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -849,7 +849,7 @@ nav a:hover {
     margin: 0 10px;
 }
 #vitek-logo {
-    height: 70%;    
+    height: 70%;
 }
 #spv1-logo {
     height: 70%;
