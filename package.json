@@ -1,7 +1,7 @@
 {
   "name": "afk-layout",
   "version": "1.0.0",
-  "description": "css for askoyfotballklubb.no",
+  "description": "assets for askoyfotballklubb.no",
   "main": "gulpfile.js",
   "keywords": [
     "gulp",
