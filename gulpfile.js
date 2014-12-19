@@ -20,8 +20,8 @@ gulp.task('styles', function () {
     ];
 
     return gulp.src(['css/main.css', 'css/frontpage-only.css'])
-    .pipe(postcss(processors))
-    .pipe(gulp.dest('www'));
+        .pipe(postcss(processors))
+        .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('deploy', function () {
@@ -38,6 +38,9 @@ gulp.task('default', function() {
 
     gulp.watch(['www/**/*'], reload);
     gulp.watch(['css/**/*'], ['styles']);
+    gulp.watch(['dist/**/*'], function() {
+        gulp.src('dist/**/*').pipe(gulp.dest('www'));
+    })
 
 });
 
