@@ -10,6 +10,7 @@
     "afk",
     "askøy fotballklubb"
   ],
+  "repository" : { "type" : "git", "url" : "http://github.com/askoyfk/afk-assets.git" },
   "author": "Victor Nystad",
   "license": "ISC",
   "devDependencies": {
