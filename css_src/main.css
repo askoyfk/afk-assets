@@ -1,0 +1,13 @@
+@import 'node_modules//normalize.css/normalize.css';
+@import 'css_src/config.css';
+@import 'css_src/base.css';
+@import 'css_src/typography.css';
+@import 'css_src/header.css';
+@import 'css_src/footer.css';
+@import 'css_src/nav.css';
+@import 'css_src/plakat.css';
+@import 'css_src/sponsorer.css';
+@import 'css_src/boxes.css';
+@import 'css_src/table.css';
+@import 'css_src/button.css';
+@import 'css_src/list.css';

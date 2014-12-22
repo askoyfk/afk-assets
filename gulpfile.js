@@ -10,6 +10,8 @@ var hwb = require('postcss-color-hwb');
 var color = require('color');
 var customMedia = require('postcss-custom-media');
 
+var url = require('url');
+
 gulp.task('styles', function () {
     var processors = [
         cssimport(),
@@ -19,28 +21,29 @@ gulp.task('styles', function () {
         autoprefixer({ browsers: ['last 2 versions'] })
     ];
 
-    return gulp.src(['css/main.css', 'css/frontpage-only.css'])
+    return gulp.src(['css-src/main.css', 'css-src/frontpage-only.css'])
         .pipe(postcss(processors))
-        .pipe(gulp.dest('dist/css'));
+        .pipe(gulp.dest('css'));
 });
 
-gulp.task('deploy', function () {
-    return gulp.src('./www/**/*')
-    .pipe(deploy());
-});
+// gulp.task('deploy', function () {
+//     return gulp.src(['www/**'])
+//         .pipe(deploy());
+// });
 
 gulp.task('default', function() {
     browserSync({
         server: {
-            baseDir: './www'
+            baseDir: ['www'],
+            routes: {
+                '/css' : 'css',
+                '/svg' : 'svg'
+            }
         }
     });
 
-    gulp.watch(['www/**/*'], reload);
-    gulp.watch(['css/**/*'], ['styles']);
-    gulp.watch(['dist/**/*'], function() {
-        gulp.src('dist/**/*').pipe(gulp.dest('www'));
-    })
+    gulp.watch(['www/**/*', 'css/*.css', 'svg/*.svg'], reload);
+    gulp.watch(['src/css/*'], ['styles']);
 
 });
 

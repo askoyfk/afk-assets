@@ -20,7 +20,6 @@
     "gulp": "^3.8.10",
     "gulp-gh-pages": "^0.4.0",
     "gulp-postcss": "^3.0.0",
-    "html5-boilerplate-npm": "^4.1.0-B",
     "marked": "^0.3.2",
     "normalize.css": "^3.0.2",
     "postcss-color-hwb": "^1.0.0",
