@@ -1,6 +1,6 @@
 {
   "name": "afk-assets",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "assets for askoyfk.no",
   "main": "gulpfile.js",
   "keywords": [
@@ -10,7 +10,10 @@
     "afk",
     "askøy fotballklubb"
   ],
-  "repository" : { "type" : "git", "url" : "http://github.com/askoyfk/afk-assets.git" },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/askoyfk/afk-assets.git"
+  },
   "author": "Victor Nystad",
   "license": "ISC",
   "devDependencies": {
