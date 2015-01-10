@@ -21,7 +21,7 @@ gulp.task('styles', function () {
         autoprefixer({ browsers: ['last 2 versions'] })
     ];
 
-    return gulp.src(['css-src/main.css', 'css-src/frontpage-only.css'])
+    return gulp.src(['css_src/main.css', 'css_src/frontpage-only.css'])
         .pipe(postcss(processors))
         .pipe(gulp.dest('css'));
 });
@@ -43,7 +43,7 @@ gulp.task('default', function() {
     });
 
     gulp.watch(['www/**/*', 'css/*.css', 'svg/*.svg'], reload);
-    gulp.watch(['src/css/*'], ['styles']);
+    gulp.watch(['css_src/*'], ['styles']);
 
 });
 
