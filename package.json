@@ -1,6 +1,6 @@
 {
   "name": "afk-assets",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "assets for askoyfk.no",
   "main": "gulpfile.js",
   "keywords": [
@@ -21,7 +21,7 @@
     "browser-sync": "^1.6.5",
     "color": "^0.7.3",
     "color-convert": "^0.5.2",
-    "gulp": "^3.8.10",
+    "gulp": "^3.8.11",
     "gulp-gh-pages": "^0.4.0",
     "gulp-postcss": "^3.0.0",
     "marked": "^0.3.2",

@@ -1,0 +1,60 @@
+.required-message {
+    color: red;
+    display: none;
+    font-size: .8em;
+}
+
+.ss-form-entry {
+    margin-bottom: .8em;
+}
+
+.ss-form-entry input {
+  vertical-align: middle;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.ss-required-asterisk {
+    color: red;
+}
+
+.ss-q-title {
+    margin-bottom: .3em;
+}
+
+.ss-section-title {
+    font-weight: bold;
+}
+
+.ss-password-warning {
+    display: none;
+}
+
+.ss-section-description {
+    font-style: italic;
+}
+
+/* show link to backup-form to older browsers */
+#ss-form {
+    display: none;
+}
+
+body:not([ie8]) #backupform {
+    display: none;
+}
+
+body:not([ie8]) #ss-form {
+    display: block;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+@media screen and (--medium-min) {
+    input[type=text], textarea {
+        width: 668px;
+    }
+}
