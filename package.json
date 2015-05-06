@@ -1,6 +1,6 @@
 {
   "name": "afk-assets",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "assets for askoyfk.no",
   "main": "gulpfile.js",
   "keywords": [
